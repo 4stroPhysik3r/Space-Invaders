@@ -43,6 +43,4 @@ Relive the glory of the arcade classics, master your ship, and become the legend
 
 ## Authors
 
-KKulmanis (Captain) <br>
-argoPe <br>
 4stroPhysik3r
