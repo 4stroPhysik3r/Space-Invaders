@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>make-your-game</title>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div id="score-container">
+        Score: <span id="score">0</span>
+    </div>
+    <div id="lives-container">
+        <span id="lives">3</span>
+    </div>
+    <div id="uptime-container">
+        Time: <span id="uptime">00:00</span>
+    </div>
+    <div id="fps-container">
+        FPS: <span id="fps">0</span>
+    </div>
+
+    <div class="overlay" id="startOverlay">
+        <h1>SPACE INVADERS</h1>
+        <h3>Press Enter to Start</h3>
+
+        <p class="underline"><em>Controls:</p>
+        <p> A - Move left<br>
+            D - Move right<br>
+            Space - Shoot<br>
+            Escape - Pause</em></p>
+
+        <div id="credit">
+            by 4stroPhysik3r<br>
+            <small>with assistance from KKulmanis, argoPe</small>
+        </div>
+    </div>
+
+    <div class="overlay" id="endOverlay">
+        <h1>Game Over</h1>
+        <h2>Score: <span id="finalScore">0</span></h2>
+        <h3>Press Enter to Restart</h3>
+    </div>
+
+    <div class="pause-menu" id="pauseMenu">
+        <h1>Game Paused</h1>
+        <h3>Press Escape to Resume<br>
+            or<br>
+            Press Enter to Forfeit/Restart</h3>
+    </div>
+
+</body>
+
+</html>

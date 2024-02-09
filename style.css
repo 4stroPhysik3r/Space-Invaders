@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'SpaceInvaders';
+    src: url('assets/retro_computer.ttf')format('truetype');
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("https://img.freepik.com/free-photo/beautiful-shining-stars-night-sky_181624-622.jpg?w=900&t=st=1694704432~exp=1694705032~hmac=7e1e4b5dc8c2c533fccc1d9b9e40380c548e8cba82dcd8042688d870660c779f") no-repeat center center fixed;
+    background-size: cover;
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'SpaceInvaders', sans-serif;
+    font-size: 1.25rem;
+    overflow: hidden;
+}
+
+.overlay {
+    font-size: 1.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+}
+
+.pause-menu {
+    font-size: 1.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+}
+
+.ship {
+    width: clamp(3%, 10vw, 5%);
+}
+
+.bullets {
+    width: clamp(1%, 10vw, 1.125%);
+}
+
+.enemy-bullets {
+    width: clamp(1%, 10vw, 1.125%);
+}
+
+.obst {
+    image-rendering: pixelated;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    grid-auto-rows: auto;
+    width: 100%;
+}
+
+.enemies {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-rows: auto;
+    gap: clamp(1em, 0.5em, 2em);
+    width: 60%;
+}
+
+.enemy {
+    width: 100%;
+    min-width: 20px;
+}
+
+.credits {
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Container */
+#score-container {
+    position: absolute;
+    display: none;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+#lives-container {
+    position: absolute;
+    display: none;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+#uptime-container {
+    position: absolute;
+    display: none;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+#fps-container {
+    position: absolute;
+    display: none;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+#credit {
+    padding-top: 1rem;
+    font-size: 1rem;
+}
