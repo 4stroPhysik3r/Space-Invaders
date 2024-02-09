@@ -119,3 +119,11 @@ body {
     padding-top: 1rem;
     font-size: 1rem;
 }
+
+#credit a {
+    color: #fff;
+}
+
+#credit a:hover {
+    text-decoration: none;
+}
