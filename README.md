@@ -28,8 +28,8 @@ Relive the glory of the arcade classics, master your ship, and become the legend
 
 > Docker:
 
-1. TBA
-2. TBA
+1. Start the docker server `npm start`
+2. Navigate to [localhost:42069](http://localhost:42069) or click the link in the terminal
 
 > Live Server Plugin (Visual Studio Code):
 
